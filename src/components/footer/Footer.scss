@@ -1,0 +1,78 @@
+.footer {
+  background-color: rgba($color: #000000, $alpha: 0.05);
+  padding-block: 20px;
+  margin-top: 80px;
+  .content {
+    display: flex;
+    justify-content: space-between;
+    .title {
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-bottom: 20px;
+      padding-left: 13px;
+    }
+
+    .footer-left {
+      .follow {
+        list-style: none;
+        display: flex;
+        gap: 8px;
+
+        li {
+          width: 45px;
+          height: 45px;
+          border-radius: 10%;
+          display: flex;
+          align-items: center;
+          padding-left: 15px;
+          border-radius: 50%;
+
+          a {
+            text-decoration: none;
+            outline: none;
+            color: black;
+          }
+
+          &:hover {
+            background-color: white;
+          }
+        }
+      }
+    }
+
+    .footer-right {
+      .company {
+        padding-left: 12px;
+        li {
+          margin-top: 10px;
+          color: var(--secondary-text-color);
+
+          &:hover {
+            color: var(--accent-color);
+          }
+        }
+      }
+    }
+  }
+
+  .subfooter {
+    flex-direction: column;
+    margin-block: 20px;
+    .credit-card-img {
+      width: 200px;
+      text-align: center;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    .content {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+}
